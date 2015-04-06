@@ -1,6 +1,6 @@
-%define major	7
-%define libname	%mklibname quvi %{major}
-%define devname	%mklibname -d quvi
+%define major 7
+%define libname %mklibname quvi %{major}
+%define devname %mklibname -d quvi
 
 Summary:	Library for parsing flash media stream URLs with C API
 Name:		libquvi
