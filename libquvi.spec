@@ -5,13 +5,13 @@
 Summary:	Library for parsing flash media stream URLs with C API
 Name:		libquvi
 Version:	0.4.1
-Release:	10
+Release:	11
 Group:		Networking/Other
 License:	LGPLv2+
 Url:		http://quvi.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(libcurl) >= 7.18.2
-BuildRequires:	pkgconfig(libquvi-scripts) >= 0.4.0
+BuildRequires:	pkgconfig(libquvi-scripts) >= 1:0.4.21
 BuildRequires:	pkgconfig(lua) >= 5.1
 
 %description
@@ -22,7 +22,7 @@ It is written in C and intended to be a cross-platform library.
 Summary:	Shared library files libquvi
 Group:		Networking/Other
 Requires:	libquvi-scripts >= 1:0.4.21
-Requires:	libquvi-scripts < 0.9
+Requires:	libquvi-scripts < 1:0.9
 
 %description -n %{libname}
 Shared library files libquvi.
