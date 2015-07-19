@@ -1,0 +1,11 @@
+--- libquvi-0.4.1/configure.ac	2012-03-23 14:09:02.000000000 +0000
++++ libquvi-0.4.1/configure.ac.tpg	2015-07-19 19:23:59.000000000 +0000
+@@ -31,6 +31,8 @@
+ AM_INIT_AUTOMAKE([-Wall -Werror foreign dist-bzip2 dist-xz])
+ AM_SILENT_RULES([yes])
+ 
++m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
++
+ LT_INIT()
+ LT_PREREQ([2.2])
+ 

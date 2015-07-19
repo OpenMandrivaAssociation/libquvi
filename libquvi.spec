@@ -10,6 +10,7 @@ Group:		Networking/Other
 License:	LGPLv2+
 Url:		http://quvi.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
+Patch0:		libquvi-0.4.1-automake.patch
 BuildRequires:	pkgconfig(libcurl) >= 7.18.2
 BuildRequires:	libquvi-scripts-devel >= 1:0.4.21
 BuildRequires:	pkgconfig(lua) >= 5.1
@@ -40,6 +41,7 @@ Files needed for building applications with libquvi.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 %configure
