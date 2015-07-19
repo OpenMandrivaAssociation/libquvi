@@ -13,6 +13,7 @@ Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(libcurl) >= 7.18.2
 BuildRequires:	libquvi-scripts-devel >= 1:0.4.21
 BuildRequires:	pkgconfig(lua) >= 5.1
+BuildRequires:	gettext-devel
 
 %description
 libquvi is a library for parsing video download links with C API.
