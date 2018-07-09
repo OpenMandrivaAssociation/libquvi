@@ -24,7 +24,7 @@ It is written in C and intended to be a cross-platform library.
 Summary:	Shared library files libquvi
 Group:		Networking/Other
 Requires:	libquvi-scripts >= 1:0.4.21
-Requires:	libquvi-scripts = 0.9
+#Requires:	libquvi-scripts = 0.9
 
 %description -n %{libname}
 Shared library files libquvi.
