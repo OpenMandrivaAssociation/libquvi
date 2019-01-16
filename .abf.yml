@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   libquvi-0.4.1.tar.xz: c26ed704a03820761ea62795a843930aaa9c2bb6
+sources:
+  libquvi-0.9.4.tar.xz: f7577530e00a07c7decdaf7a352f437da413bcdb
