@@ -8,7 +8,7 @@ Version:	0.4.1
 Release:	22
 Group:		Networking/Other
 License:	LGPLv2+
-Url:		http://quvi.sourceforge.net/
+Url:		https://quvi.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 Patch0:		libquvi-0.4.1-automake.patch
 BuildRequires:	pkgconfig(libcurl) >= 7.18.2
