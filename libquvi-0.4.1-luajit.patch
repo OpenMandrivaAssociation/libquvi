@@ -1,0 +1,18 @@
+diff -up libquvi-0.4.1/configure.ac.1~ libquvi-0.4.1/configure.ac
+--- libquvi-0.4.1/configure.ac.1~	2025-02-13 16:01:16.774053444 +0100
++++ libquvi-0.4.1/configure.ac	2025-02-13 16:04:16.850035899 +0100
+@@ -42,12 +44,14 @@ AC_PATH_PROGS([ND], [naturaldocs Natural
+ AM_CONDITIONAL([HAVE_ND], [test -n "$ND"])
+ 
+ # Checks for libraries.
++PKG_CHECK_MODULES([liblua], [luajit >= 2.1], [], [
+ PKG_CHECK_MODULES([liblua], [lua >= 5.1], [], [
+   PKG_CHECK_MODULES([liblua], [lua51 >= 5.1], [], [
+     PKG_CHECK_MODULES([liblua], [lua5.1 >= 5.1], [], [
+       PKG_CHECK_MODULES(liblua, [lua-5.1 >= 5.1])])
+   ])
+ ])
++])
+ PKG_CHECK_MODULES([libcurl], [libcurl >= 7.18.2])
+ AM_ICONV
+ 

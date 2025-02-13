@@ -11,9 +11,10 @@ License:	LGPLv2+
 Url:		https://quvi.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 Patch0:		libquvi-0.4.1-automake.patch
+Patch1:		libquvi-0.4.1-luajit.patch
 BuildRequires:	pkgconfig(libcurl) >= 7.18.2
 BuildRequires:	libquvi-scripts-devel >= 0.4.21
-BuildRequires:	pkgconfig(lua) >= 5.2.4
+BuildRequires:	pkgconfig(luajit)
 BuildRequires:	gettext-devel
 
 %description
